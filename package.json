@@ -10,11 +10,17 @@
     "type": "git",
     "url": "git+https://github.com/arakilian0/electron-start.git"
   },
-  "keywords": ["electron-quickstart", "electron-template"],
+  "keywords": [
+    "electron-quickstart",
+    "electron-template"
+  ],
   "author": "@arakilian0 <arakilian0@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/arakilian0/electron-start/issues"
   },
-  "homepage": "https://github.com/arakilian0/electron-start#readme"
+  "homepage": "https://github.com/arakilian0/electron-start#readme",
+  "devDependencies": {
+    "electron": "^15.3.1"
+  }
 }
