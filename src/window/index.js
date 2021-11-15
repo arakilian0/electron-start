@@ -12,7 +12,7 @@ module.exports = function createIndex () {
       webPreferences: {
         nodeIntegration: true,
         contextIsolation: false,
-        preload: path.resolve('src', 'scripts', 'preload.js')
+        preload: path.resolve('src', 'electron', 'preload.js')
       }
     })
   
