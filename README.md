@@ -42,7 +42,8 @@ yarn run dist
 npm run dist
 ```
 
-This will run electron-builder using the configurations in `package.json`.
+This will run electron-builder using the configurations in `package.json` and bundle up
+a distributable electron application in `/dist`.
 
 ## License
 This project is [MIT Licensed](https://github.com/arakilian0/electron-start/blob/main/LICENSE).
