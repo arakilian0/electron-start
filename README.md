@@ -8,14 +8,14 @@ This project is an [Electron](https://www.electronjs.org) Quickstart Template. I
 
 ## Installation
 
-```bash
+```
 git clone https://github.com/arakilian0/electron-start.git
 ```
 
 ### Setup
 
 After cloning the repo, install the project dependencies. In this case "dependency". Electron.
-```bash
+```
 cd electron-start
 yarn install 
 # or 
@@ -26,7 +26,7 @@ npm install
 
 To start the app, run
 
-```bash
+```
 yarn start 
 # or 
 npm start
@@ -36,7 +36,7 @@ npm start
 
 To build the app, this template uses [electron-builder](https://www.electron.build/).
 
-```bash
+```
 yarn run dist 
 # or 
 npm run dist
