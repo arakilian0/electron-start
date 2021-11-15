@@ -1,6 +1,6 @@
 # [electron-start](https://github.com/arakilian0/electron-start) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/arakilian0/electron-start/blob/main/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/arakilian0/electron-start/blob/main/CONTRIBUTING.md)
 
-This project is an [Electron](https://www.electronjs.org) Quickstart Template. In the [docs](https://www.electronjs.org/docs/latest/tutorial/quick-start#bonus-add-functionality-to-your-web-contents)(scroll down), it eventually just tells you to create 3 files. `index.html, main.js, preload.js`. Well we did, and now we want to build past that. Just a little. Work on things like, custom Web Components with JavaScript, build scripts for Linux, Windows, & Mac using `electron-builder`, bundle size optimizations etc.
+This project is an [Electron](https://www.electronjs.org) Quickstart Template. In the [docs](https://www.electronjs.org/docs/latest/tutorial/quick-start#bonus-add-functionality-to-your-web-contents)(scroll down), it eventually just tells you to create 3 files. `index.html, main.js, preload.js`. Well we did, and now we want to build past that. Just a little. Work on things like, custom Web Components with JavaScript, build scripts for Linux Windows & Mac using `electron-builder`, bundle size optimizations etc.
 
 ## Requirements
 
