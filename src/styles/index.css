@@ -1,1 +1,6 @@
-@import './contents/testing.css';
+@import './contents/reset.css';
+@import './contents/root.css';
+
+body {
+    background: var(--test-gray);
+}
