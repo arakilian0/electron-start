@@ -17,8 +17,6 @@ git clone https://github.com/arakilian0/electron-start.git
 After cloning the repo, install the project dependencies. In this case "dependency". Electron.
 ```
 cd electron-start
-yarn install 
-# or 
 npm install
 ```
 
@@ -27,18 +25,18 @@ npm install
 To start the app, run
 
 ```
-yarn start 
-# or 
 npm start
 ```
 
 ### Build
 
-To build the app, this template uses [electron-builder](https://www.electron.build/).
-
+To build the app, this template uses [electron-builder](https://www.electron.build/). First globally install
+electron-builder.
 ```
-yarn run dist 
-# or 
+npm install -g electron-builder
+```
+then
+```
 npm run dist
 ```
 
