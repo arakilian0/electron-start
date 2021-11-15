@@ -4,7 +4,7 @@ const path = require('path')
 const keybinds = require(path.resolve('src', 'electron', 'keybinds.js'))
 
 // Electron Windows
-const createIndex = require(path.resolve('src', 'window'))
+const createIndex = require(path.resolve('src', 'electron', '__index'))
 
 // Create a menu for Local Shortcuts
 // Hidden in the indexWindow and should be hidden in all other
