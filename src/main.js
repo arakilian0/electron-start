@@ -1,42 +1,27 @@
 // Modules to control application life and create native browser window
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, Menu, MenuItem } = require('electron')
 const path = require('path')
+const keybinds = require(path.resolve('src', 'keybinds.js'))
 
-function createWindow () {
-  // Create the browser window.
-  const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
-    // Hide 'mainWindow' until 'ready-to-show'
-    show: false,
-    webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
-    }
-  })
+// Electron Windows
+const createIndex = require(path.resolve('src', 'window'))
 
-  // and load the index.html of the app.
-  mainWindow.loadFile(path.join(__dirname, 'index.html'))
-
-  // Show 'mainWindow' when 'ready-to-show'
-  mainWindow.on('ready-to-show', () => {
-    mainWindow.show()
-    mainWindow.focus()
-  })
-
-  // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
-}
+// Create a menu for Local Shortcuts
+// Hidden in the indexWindow and should be hidden in all other
+// windows. We want to create our own menu.
+const menu = new Menu(); menu.append(new MenuItem(keybinds))
+Menu.setApplicationMenu(menu)
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.whenReady().then(() => {
-  createWindow()
+  createIndex()
 
   app.on('activate', function () {
     // On macOS it's common to re-create a window in the app when the
     // dock icon is clicked and there are no other windows open.
-    if (BrowserWindow.getAllWindows().length === 0) createWindow()
+    if (BrowserWindow.getAllWindows().length === 0) createIndex()
   })
 })
 
