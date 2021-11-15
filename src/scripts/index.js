@@ -1,3 +1,3 @@
-const resolve = require('path').resolve
+const path = require('path')
 
-require(resolve('src', 'scripts', 'contents', 'testing'))
+require(path.join(__dirname, 'scripts/contents/testing.js'))
