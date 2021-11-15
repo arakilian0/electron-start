@@ -12,7 +12,7 @@ module.exports = function createIndex () {
       webPreferences: {
         nodeIntegration: true,
         contextIsolation: false,
-        preload: path.resolve('src', 'electron', 'preload.js')
+        preload: path.join(__dirname, 'preload.js')
       }
     })
   
@@ -20,7 +20,7 @@ module.exports = function createIndex () {
     // This let's us use Local Shortcuts on the window.
     indexWindow.setMenuBarVisibility(false)
     // and load the index.html of the app.
-    indexWindow.loadFile(path.resolve('src', 'index.html'))
+    indexWindow.loadFile('./src/index.html')
   
     // Show 'mainWindow' when 'ready-to-show'
     indexWindow.on('ready-to-show', () => {
