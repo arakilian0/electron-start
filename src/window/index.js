@@ -16,7 +16,8 @@ module.exports = function createIndex () {
       }
     })
   
-    // Don't disable the menu, but hide it...
+    // Don't disable the menu, but hide it.
+    // This let's us use Local Shortcuts on the window.
     indexWindow.setMenuBarVisibility(false)
     // and load the index.html of the app.
     indexWindow.loadFile(path.resolve('src', 'index.html'))
