@@ -1,7 +1,7 @@
 // Modules to control application life and create native browser window
 const { app, BrowserWindow, Menu, MenuItem } = require('electron')
 const path = require('path')
-const keybinds = require(path.resolve('src', 'keybinds.js'))
+const keybinds = require(path.resolve('src', 'scripts', 'keybinds.js'))
 
 // Electron Windows
 const createIndex = require(path.resolve('src', 'window'))
