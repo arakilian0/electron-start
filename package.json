@@ -24,7 +24,7 @@
     "electron-quickstart",
     "electron-template"
   ],
-  "author": "@arakilian0 <arakilian0@gmail.com>",
+  "author": "Acme, Inc.",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/arakilian0/electron-start/issues"
